@@ -13,6 +13,10 @@ public class ContagemDeVogais {
         char[] letras = palavra.toCharArray();
         
         int contagem = 0;
+
+        // variavel i anda pela palavra
+        // variavel j anda pelo array da lista de vogais
+        
         for(int i = 0; i < letras.length; i++) {
             for(int j = 0; j < vogais.length; j++) {
                 if(letras[i] == vogais[j]) {
