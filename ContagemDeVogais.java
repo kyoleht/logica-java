@@ -14,19 +14,16 @@ public class ContagemDeVogais {
         
         int contagem = 0;
         for(int i = 0; i < letras.length; i++) {
-            if(letras == vogais) {
-                contagem = contagem + 1;
+            for(int j = 0; j < vogais.length; j++) {
+                if(letras[i] == vogais[j]) {
+                    contagem++;
+                }
             }
         }
-
-        String vogaisContadas = new String(letras);
         
-        System.out.println("O número de vogais dentro da sua palavra é: " + vogaisContadas);
+        System.out.println("O número de vogais dentro da sua palavra é: " + contagem);
     }
 }
 
 /* Pede uma palavra e conta quantas vogais ela tem.
 (a, e, i, o, u) */
-
-// preciso transformar a string em int, para contar as letras
-// voltar para string
